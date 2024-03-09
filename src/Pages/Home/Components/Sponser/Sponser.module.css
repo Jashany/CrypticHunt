@@ -1,3 +1,23 @@
 .main{
-    height: 100dvh;
+    margin-top: 3rem;
+    padding: 5rem;
+    height: 100vh;
+
+}
+.main h1{
+    text-align: center;
+    margin-bottom: 5rem;
+    color :white;
+    font-family: var(--satoshi-regular-font);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:  20px 80px;
+}
+.sponser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

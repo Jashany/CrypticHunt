@@ -1,3 +1,4 @@
+import Contact from "./Components/Contact/Contact";
 import Hero from "./Components/Hero/Hero";
 import Sponser from "./Components/Sponser/Sponser";
 import Timeline from "./Components/Timeline/Timeline";
@@ -9,6 +10,8 @@ const Home = () => {
             <Hero />
             <Timer />
             <Timeline />
+            <Sponser />
+            <Contact />     
         </div>
      );
 }

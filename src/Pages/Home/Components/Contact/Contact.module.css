@@ -1,0 +1,59 @@
+.main{
+    height: 80dvh;
+    color: #ffffff;
+    font-family: var(--satoshi-regular-font);
+
+
+}
+
+.main p{
+    font-size: 2.5rem;
+    font-family: var(--satoshi-black-font);
+    
+}
+.main h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: var(--satoshi-bold-font);
+}
+
+.main h3{
+    font-size: 2rem;
+    font-family: var(--satoshi-regular-font);
+}
+
+.main h5{
+    font-size: 1.4rem;
+    
+}
+
+.main>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 2rem;
+}
+
+.main>div>div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: right;
+    
+}
+
+.main>div>div>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main>div>div>div>div{
+    display: flex;
+}
+
+.main>div>div>img{
+    width: 100px;
+    height: 100px;
+}
