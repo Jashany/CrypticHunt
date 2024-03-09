@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'joystick';
+  src: url('./assets/joystix monospace.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Satoshi-black';
+  src: url('./assets/Satoshi-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Satoshi-bold';
+  src: url('./assets/Satoshi-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Satoshi-light';
+  src: url('./assets/Satoshi-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Satoshi-medium';
+  src: url('./assets/Satoshi-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Satoshi-regular';
+  src: url('./assets/Satoshi-Regular.otf') format('opentype');
+}
+
+:root {
+  --satoshi-black-font: 'Satoshi-black';
+  --satoshi-bold-font: 'Satoshi-bold';
+  --satoshi-light-font: 'Satoshi-light';
+  --satoshi-medium-font: 'Satoshi-medium';
+  --satoshi-regular-font: 'Satoshi-regular';
+  --joystick-font: 'joystick';
+  --white: #ffffff;
+  --black: #000000;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

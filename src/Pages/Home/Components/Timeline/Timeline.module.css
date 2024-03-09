@@ -1,0 +1,60 @@
+.main{
+    position: relative;
+}
+.main>h1{
+    color: white;
+    font-family: var(--satoshi-regular-font);
+    font-size: 5rem;
+}
+
+.time_comp{
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.abs{
+    background:linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.timemain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.timemain h1{
+    color: white;
+}
+
+
+
+.timemain>div:nth-child(1){
+    text-align: center;
+    font-family: var(--satoshi-regular-font);
+}
+
+.timeline{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.lineEven{
+    width: 5px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.lineOdd{
+    width: 5px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+
