@@ -1,5 +1,6 @@
 .main{
     position: relative;
+    overflow: hidden;
 }
 .main>h1{
     color: white;
