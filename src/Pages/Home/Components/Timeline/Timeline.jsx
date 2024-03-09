@@ -80,10 +80,10 @@ const Timelinecomp = ({prop}) => {
     return (
         <div className={styles.timemain}>
             <div>
-                <div>
+                <div className={styles.linefive}>
 
                 </div>
-                <div>
+                <div style={{alignSelf:"center"}}>
                 <h1>
                 {prop.t1}
                 </h1>

@@ -28,15 +28,26 @@
     
 }
 
+.linefive{
+    height: 200px;
+    width: 3px;
+    margin-right: 10px;
+    margin-left: 337px;
+    background-color: white;
+}
+
 .timemain h1{
+    text-align: left;
     color: white;
+    
 }
 
 
 
 .timemain>div:nth-child(1){
-    text-align: center;
+    justify-content: center;
     font-family: var(--satoshi-regular-font);
+    display: flex;
 }
 
 .timeline{
