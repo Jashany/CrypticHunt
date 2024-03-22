@@ -17,7 +17,7 @@
 }
 .innermain>h1{
     color: white;
-    font-size: 6rem;
+    font-size: clamp(4rem,7vw,6rem);
     text-align: center;
     width: 60%;
     overflow: hidden;
@@ -43,9 +43,24 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
+
 input[type='number'] {
     -moz-appearance: textfield;
 }
+
+.inputError {
+    border: 2px solid red;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+
+
+
 .form{
     color:white;
     font-family: var(--satoshi-regular-font);
@@ -56,12 +71,18 @@ input[type='number'] {
     padding-inline: 7rem;
     flex-direction  : column;
 }
+.form>form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
 
 
 .form label {
     display: flex;
     flex-direction: column;
-    font-size: 1.25rem;
+    font-size: clamp(1rem,2vw,1.25rem);
     gap: 10px;
     width: 100%;
 }
@@ -98,4 +119,22 @@ input[type='number'] {
     text-decoration: underline;
     cursor: pointer;
     text-underline-offset: 0.3rem;
+}
+
+@media screen and (max-width: 900px){
+    .innermain>h1{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        padding-inline: 2rem;
+    }
+    .main img{
+        margin-inline:  auto ;
+        margin-bottom: 30px;
+    }
+    .main{
+        height: 110dvh;
+        background-color: black;
+    }
 }

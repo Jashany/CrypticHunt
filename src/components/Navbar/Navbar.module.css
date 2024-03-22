@@ -1,0 +1,83 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    align-items: center;
+    padding-inline: 4rem;
+    min-height: 15vh;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: var(--satoshi-regular-font);
+}
+.Navbar>img{
+    width: 150px;
+}
+
+.Navbar button{
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+.hamburgerMenu{
+    display: none;
+}
+@media screen and (max-width:1000px) {
+    .hamburgerMenu{
+        display: block;
+
+    }
+    .responsive .hamburgerMenu{
+        position: absolute;
+        top: 35px;
+        right: 20px;
+
+    }
+    .items{
+        display: none ;
+    }
+    .responsive .Navbar{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease-out; /* Add this line */
+    	transform: translateX(0);
+        transition: height 0.5s ease-out;
+    }
+    .Navbar {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease-out;
+        padding-inline: 2rem;
+    }
+
+    .responsive .Navbar img{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .responsive .Navbar .items,
+    .responsive .Navbar .button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      gap: 30px;
+      padding-bottom: 10px;
+    }
+
+}

@@ -44,3 +44,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+button:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}

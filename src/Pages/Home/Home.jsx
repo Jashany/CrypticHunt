@@ -5,15 +5,17 @@ import Timeline from "./Components/Timeline/Timeline";
 import Timer from "./Components/Timer/Timer";
 import Style from './Home.module.css'
 const Home = () => {
-    return ( 
+    const isMobile = window.innerWidth < 1000;
+
+    return (
         <div className={Style.main}>
             <Hero />
             <Timer />
-            <Timeline />
+            {!isMobile && <Timeline />}
             <Sponser />
             <Contact />     
         </div>
-     );
+    );
 }
  
 export default Home;

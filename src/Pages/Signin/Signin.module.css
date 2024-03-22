@@ -17,7 +17,7 @@
 }
 .innermain>h1{
     color: white;
-    font-size: 6rem;
+    font-size: clamp(4rem,7vw,6rem);
     width: 60%;
     overflow: hidden;
     text-align: center;
@@ -40,6 +40,12 @@
     gap: 20px;
     padding-inline: 7rem;
     flex-direction  : column;
+}
+
+.form>form{
+    display: flex;
+    flex-direction  : column;
+    gap: 20px;
 }
 
 
@@ -82,4 +88,18 @@
     font-size: 1.15rem;
     text-decoration: underline;
     text-underline-offset: 0.3rem;
+}
+
+
+@media screen and (max-width: 900px){
+    .innermain>h1{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        padding-inline: 2rem;
+    }
+    .main img{
+        margin: 0 auto ;
+    }
 }
