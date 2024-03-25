@@ -46,26 +46,26 @@ const Timer = () => {
             <div className={styles.grid}>
                 <div>
                     <h4>
-                        Lorem, ipsum.????
+                      Who are we??
                     </h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quod rerum nam non! Sunt, quidem?Lorem ipsum dolor sit amet consectetur.
+                    ACM Thapar is a tech enuthsiast's home. We believe in pushing boundaries by collaborating and searching innovative ideas to bring like minded tech savvy people together to creatre something big.
                     </p>
                 </div>
                 <div>
                     <h4>
-                    Lorem, ipsum.????
+                    What’s cryptic hunt??
                     </h4>
                     <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quod rerum nam non! Sunt, quidem?Lorem ipsum dolor sit amet consectetur.
+                    Cryptic Hunt is a puzzle-solving event where participants will have to solve rigorous cryptic clues to progress through a series of challenges with the goal of achieving the ultimate reward.
                     </p>
                 </div>
                 <div>
                     <h4>
-                    Lorem, ipsum.????
+                    What’s eclipse??
                     </h4>
                     <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quod rerum nam non! Sunt, quidem?Lorem ipsum dolor sit amet consectetur.
+                    Eclipse is ACM Thapar's flagship event consisting of (event names) providing a enjoyable ride for all tech geeks.
                     </p>
                 </div>
             </div>

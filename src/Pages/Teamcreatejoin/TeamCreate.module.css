@@ -1,6 +1,6 @@
 .main{
     background-color: black;
-    height: 100vh;
+    height: 85vh;
 }
 
 .innermain{
@@ -14,6 +14,15 @@
     align-self: center;
     height: 60%;
 
+}
+
+.error{
+    color: red !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    margin-top: 20px;
+    
 }
 
 .innermain h3{

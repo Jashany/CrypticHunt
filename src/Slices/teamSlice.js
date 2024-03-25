@@ -13,12 +13,6 @@ const teamSlice = createSlice({
       state.teamInfo = action.payload;
       localStorage.setItem('teamInfo', JSON.stringify(action.payload));
     },
-    removeTeamMember: (state, action) => {
-      state.members = state.members.filter(member => member._id !== action.payload);
-      // Update localStorage after removing a member
-      const updatedTeamInfo = { ...state.teamInfo, members: state.members };
-      localStorage.setItem('teamInfo', JSON.stringify(updatedTeamInfo));
-    },
     // Action to clear the team information, e.g., when leaving a team or logging out
     clearTeamInfo: (state) => {
       state.teamInfo = null;
@@ -27,6 +21,6 @@ const teamSlice = createSlice({
   },
 });
 
-export const { setTeamInfo, addTeamMember, removeTeamMember, clearTeamInfo } = teamSlice.actions;
+export const { setTeamInfo, clearTeamInfo } = teamSlice.actions;
 
 export default teamSlice.reducer;

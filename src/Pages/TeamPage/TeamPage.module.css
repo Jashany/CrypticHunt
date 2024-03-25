@@ -18,6 +18,8 @@
     font-family: var(--satoshi-medium-font);
     margin-bottom: 50px;
 }
+
+
 .innermain:nth-child(1){
     margin-top: 1rem;
     align-self: flex-start;
@@ -54,6 +56,23 @@
     justify-content: space-between;
 }
 
+.refresh{
+    background-color: white;
+    border: 1px solid white;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 15px;
+ 
+    cursor: pointer;
+    font-size: clamp(10px,2vw,15px);
+
+}
+
+.tea{
+    cursor: pointer;
+    display: none;
+    margin-top: 20px;
+}
 @media screen and (max-width:1000px) {
     .main{
         display: flex;
@@ -73,5 +92,8 @@
     }
     .innermain:nth-child(1) h1{
         margin-bottom: 0;
+    }
+    .tea{
+        display: block;
     }
 }

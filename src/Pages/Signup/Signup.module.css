@@ -78,6 +78,13 @@ input[type='number'] {
     width: 100%;
 }
 
+.forminn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
 
 .form label {
     display: flex;
@@ -119,6 +126,13 @@ input[type='number'] {
     text-decoration: underline;
     cursor: pointer;
     text-underline-offset: 0.3rem;
+}
+
+.error{
+    color: red !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
 }
 
 @media screen and (max-width: 900px){

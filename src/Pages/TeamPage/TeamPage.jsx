@@ -4,6 +4,7 @@ import { useDispatch,useSelector } from 'react-redux';
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import { useEffect } from 'react';
 import { setTeamInfo } from '../../Slices/teamSlice.js';
+import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useFetchTeamDetailsMutation } from '../../Slices/teamApiSlice.js';
 
@@ -32,10 +33,18 @@ const TeamPage = () => {
             console.error("Failed to fetch team details: ", error);
         }
     }
-    useEffect(() => {
-        getteam();
-    }, []);
-    
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = () => {
+        if (!isSubmitting) {
+            setIsSubmitting(true);
+            getteam(); // Call your function here
+            setTimeout(() => {
+                setIsSubmitting(false);
+            }, 30000); // Set timeout for 30 seconds
+        }
+    };
     return (
         <>
             <Navbar />
@@ -43,14 +52,17 @@ const TeamPage = () => {
             <div className={styles.innermain}>
                 <div>
                 <h1 style={{textDecoration:"underline"}}>{team?.teamName || teamInfo?.teamName}</h1>
-                <h2 onClick={handleCopyTeamCode} style={{cursor:"pointer",marginTop:"20px"}}>Team_Id: {team?.teamId || teamInfo?.teamId}</h2>
+                <h2 onClick={handleCopyTeamCode} className={styles.tea} >Team_Id: {team?.teamId || teamInfo?.teamId}</h2>
                 </div>
-                
+                <div style={{display:"flex",justifyContent:"space-between"}}>
+
                 <h3 style={{fontSize:"1.5rem",marginBottom:"2rem"}}>Team Members:</h3>
+                {teamInfo?.members.length !=3 &&<button onClick={handleSubmit} className={styles.refresh}>Refresh Team ⟳</button> }
+                </div>
                 <ul>
                     {(team?.members || teamInfo?.members)?.map((member,index) => (
 
-                        <li key={index}>{member?.email}
+                        <li key={index}>{member?.name}
                         <p>{member?.role}</p>
                         </li>
                     ))}
