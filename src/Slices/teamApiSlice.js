@@ -1,5 +1,5 @@
 import { apiSlice } from "./apiSlice";
-const TEAMS_UR = process.env.VITE_API;
+const TEAMS_UR = import.meta.env.VITE_API;
 
 export const teamApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
