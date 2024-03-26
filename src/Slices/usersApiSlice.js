@@ -1,5 +1,5 @@
 import { apiSlice } from "./apiSlice";
-const USERS_URL = import.meta.env.VITE_API;
+const USERS_URL = process.env.VITE_API;
 
 export const userApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
