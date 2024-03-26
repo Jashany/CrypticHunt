@@ -8,7 +8,9 @@ export default ({mode})=>{
 
   return defineConfig({
     plugins: [react()],
-    server: {
-  }
+    define: {
+        "process.env": process.env,
+        ENV_KEY: process.env.ENV_KEY,
+      },
   })
 }
