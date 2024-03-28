@@ -10,6 +10,11 @@ import * as Yup from "yup";
 
 import { toast } from "react-toastify";
 const TeamCreate = () => {
+    const navigate = useNavigate();
+    const {teamInfo} = useSelector((state) => state.team);
+    if(teamInfo){
+        navigate('/team')
+    }
     return ( 
         <>
             <Navbar />
