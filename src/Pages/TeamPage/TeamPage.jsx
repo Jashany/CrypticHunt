@@ -17,6 +17,12 @@ const TeamPage = () => {
     const [getTeam , {isloading}] = useFetchTeamDetailsMutation();
 
     const team = teamInfo;
+
+    if(!team){
+        navigate('/create')
+    }
+
+    
     const handleCopyTeamCode = () => {
         if (team) {
             navigator.clipboard.writeText(team.teamId)
