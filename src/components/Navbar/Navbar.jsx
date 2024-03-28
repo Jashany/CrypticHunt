@@ -51,9 +51,9 @@ const NavLink = ({ to, children }) => {
     const isActive = location.pathname === to; // Check if current path matches link
 
     return (
-        <Link to={to} className={isActive ? styles.active : ''}>
-            {children}
-        </Link>
+        <Link to={to} className={`${isActive ? styles.active : ''} ${isActive ? styles.disabledLink : ''}`}>
+        {children}
+    </Link>
     );
 }
  

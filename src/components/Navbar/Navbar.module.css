@@ -23,7 +23,9 @@
     color: white;
 
 }
-
+.disabledLink {
+    pointer-events: none;
+}
 
 .Navbar img{
     width: 150px;
