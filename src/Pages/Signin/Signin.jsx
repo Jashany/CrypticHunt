@@ -134,7 +134,7 @@ const Signin = () => {
                     <button onClick={submitHandler}>Login</button>
                     </form>
                     <Link to='/signup' style={{textDecoration:"none"}}>
-                    <p>Haven't signed up yeh? Sign Up!</p>
+                    <p>Haven't signed up yet? Sign Up!</p>
                     </Link>
                 </div>
             </div>

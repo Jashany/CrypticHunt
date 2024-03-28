@@ -146,7 +146,7 @@ const Signup = () => {
                             </label>
                             <label>
                                 Phone Number
-                                <input type="tel" name='phone' pattern="[0-9]{10}" value={formValues.phone} onChange={handleChange} required />
+                                <input type="tel" name='phone' pattern="[0-9]{10}" placeholder='9876XXXXXX' value={formValues.phone} onChange={handleChange} required />
                                 {errors.phone && <p className={styles.error}>{errors.phone}</p> }
                             </label>
 
