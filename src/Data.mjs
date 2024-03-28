@@ -40,7 +40,7 @@ export const timeline = [
 
 export const sponsors = [
     {
-        name:"ACM",
+        name:"Sponser1",
         img:sponser1
     },
     {
