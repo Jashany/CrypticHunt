@@ -10,11 +10,11 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
     const toggleMenu = () => {
         setIsOpen(!isOpen);
       };
     const dispatch = useDispatch();
-    const location = useLocation();
     const submitHandler = () => {
         dispatch(logout());
         dispatch(clearTeamInfo());
@@ -27,9 +27,13 @@ const Navbar = () => {
             </Link>
             <div>
                 <ul className={styles.items}>
-                    <NavLink to="/team">Your_Team</NavLink>
-                    <NavLink to="/challenge">Challenges</NavLink>
-                    <NavLink to="/leaderboard">Leaderboard</NavLink>
+                    {location.pathname !== '/create' && (
+                        <>
+                            <NavLink to="/team">Your_Team</NavLink>
+                            <NavLink to="/challenge">Challenges</NavLink>
+                            <NavLink to="/leaderboard">Leaderboard</NavLink>
+                        </>
+                    )}
                     <button onClick={submitHandler}>Logout</button>
                 </ul>
 

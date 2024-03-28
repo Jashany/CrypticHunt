@@ -78,7 +78,6 @@ const Signin = () => {
             const res = await login({ email, password }).unwrap();
             dispatch(setCredentials({ ...res }));
             if(res._id){
-            console.log("hey there")
             console.log(res._id)
             const  res2 = await teamDetails({userId: res._id}).unwrap();
             dispatch(setTeamInfo({ ...res2 }));

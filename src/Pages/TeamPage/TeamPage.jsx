@@ -18,7 +18,7 @@ const TeamPage = () => {
 
     const team = teamInfo;
 
-    if(!team){
+    if(!teamInfo){
         navigate('/create')
     }
 
