@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 
 const PrivateRoute = () => {
     const { userInfo } = useSelector((state) => state.auth);
-    return userInfo ? <Outlet /> : <Navigate to="/signin" replace />;
+    const { teamInfo } = useSelector((state) => state.team);
+    return (userInfo && teamInfo) ? <Outlet /> : <Navigate to="/signin" replace />;
 }
 
 export default PrivateRoute;

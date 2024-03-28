@@ -14,6 +14,7 @@ import Challenge from "./Pages/Challenges/Challenges"
 import Leaderboard from "./Pages/Leaderboard/Leaderboard"
 import ForgetPass from "./Pages/Signin/ForgetPass/Forget"
 import ResetPass from "./Pages/Signin/ForgetPass/Reset"
+import PrivateRouteuser from "./components/PrivateRouteuser"
 
 function App() {
 
@@ -27,8 +28,11 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/forget-password" element={<ForgetPass />} />
         <Route path="/reset-password/:id/:token" element={<ResetPass />} />
-        <Route path='' element={<PrivateRoute />}>
+        <Route path='' element={<PrivateRouteuser />} >
+
           <Route path="/create" element={<TeamCreate />} />
+        </Route>
+        <Route path='' element={<PrivateRoute />}>
           <Route path="/team" element={<TeamPage />} />
           <Route path="/challenge" element={<Challenge />} />
           <Route path="/leaderboard" element={<Leaderboard />} />

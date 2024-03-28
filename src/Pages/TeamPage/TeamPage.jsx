@@ -18,11 +18,6 @@ const TeamPage = () => {
 
     const team = teamInfo;
 
-    if(!teamInfo){
-        navigate('/create')
-    }
-
-    
     const handleCopyTeamCode = () => {
         if (team) {
             navigator.clipboard.writeText(team.teamId)

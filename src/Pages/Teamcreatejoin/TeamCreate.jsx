@@ -12,9 +12,13 @@ import { toast } from "react-toastify";
 const TeamCreate = () => {
     const navigate = useNavigate();
     const {teamInfo} = useSelector((state) => state.team);
-    if(teamInfo){
-        navigate('/team')
-    }
+    
+    useEffect(() => {
+        if(teamInfo){
+            console.log(teamInfo)
+            navigate('/team')
+        }
+    }, [teamInfo, navigate]);
     return ( 
         <>
             <Navbar />
