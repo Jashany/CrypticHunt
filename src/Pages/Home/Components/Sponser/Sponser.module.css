@@ -1,7 +1,7 @@
 .main{
     margin-top: 3rem;
     padding: 5rem;
-    height: 100vh;
+    height: fit-content;
 
 }
 .main h1{
@@ -13,13 +13,28 @@
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap:  20px 80px;
+    place-items: center;
 }
 .sponser{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.sponser img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.sponser img:nth-last-child(1){
+   text-align: center;
+
 }
 
 @media screen and (max-width:1200px) {

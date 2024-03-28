@@ -11,7 +11,7 @@ const Home = () => {
         <div className={Style.main}>
             <Hero />
             <Timer />
-            {!isMobile && <Timeline />}
+            {/* {!isMobile && <Timeline />} */}
             <Sponser />
             <Contact />     
         </div>
