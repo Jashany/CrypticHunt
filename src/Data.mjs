@@ -12,6 +12,7 @@ import sponser10 from "../src/assets/sponser10.png";
 import sponser11 from "../src/assets/sponser11.png";
 import sponser12 from "../src/assets/sponser12.png";
 import sponser13 from "../src/assets/sponser13.png";
+import internshala from "../src/assets/internshala.jpg";
 
 
 
@@ -38,57 +39,68 @@ export const timeline = [
     }
 ]
 
-export const sponsors = [
+
+export const titleSponser = [
     {
-        name:"Sponser1",
-        img:sponser1
-    },
-    {
-        name:"ACM",
-        img:sponser2
-    },
-    {
-        name:"ACM",
-        img:sponser3
-    },
-    {
-        name:"ACM",
-        img:sponser4
-    },
-    {
-        name:"ACM",
-        img:sponser5
-    },
-    {
-        name:"ACM",
-        img:sponser6
-    },
-    {
-        name:"ACM",
-        img:sponser7
-    },
-    {
-        name:"ACM",
-        img:sponser8
-    },
-    {
-        name:"ACM",
-        img:sponser9
-    },
-    {
-        name:"ACM",
+        name:"PW Skills",
         img:sponser10
-    },
+    }
+]
+
+export const powerSponser = [
     {
-        name:"ACM",
+        name:"RedTape",
         img:sponser11
     },
     {
-        name:"ACM",
+        name:"Sunfeast",
+        img:sponser4
+    },
+    {
+        name:"Portronics",
+        img:sponser5
+    },
+    {
+        name:"PLUM",
+        img:sponser8
+    },
+    {
+        name:"Gabriel",
+        img:sponser3
+    },
+]
+
+export const associatesponsors = [
+    {
+        name:"Vercel",
+        img:sponser9
+    },
+    {
+        name:"Reskill",
         img:sponser12
     },
     {
-        name:"ACM",
+        name:"Coding Minutes",
+        img:sponser1
+    },
+    {
+        name:"Godrej",
         img:sponser13
+    },
+    {
+        name:"American Tourister",
+        img:sponser2
+    },
+    {
+        name:"Internshala",
+        img:internshala
+    },
+    {
+        name:"Rosha",
+        img:sponser6
+    },
+    {
+        name:"MyEquation",
+        img:sponser7
     },
 ]
