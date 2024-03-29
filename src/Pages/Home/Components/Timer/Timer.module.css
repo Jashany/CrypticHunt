@@ -12,6 +12,13 @@
 .timer{
     display: flex;
     flex-direction: column;
+    font-family: var(--satoshi-regular-font);
+}
+
+.timer p{
+    font-size: clamp(0.75rem,4vw,1.5rem);
+    text-align: center;
+    font-family: var(--satoshi-regular-font);
 }
 .timer>div{
     display: flex;
