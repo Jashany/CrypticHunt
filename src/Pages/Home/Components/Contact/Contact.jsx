@@ -2,6 +2,7 @@ import styles from './Contact.module.css'
 import photo from "../../../../assets/photo.png"
 import rochak from "../../../../assets/rochak.png"
 import discord from "../../../../assets/discord.png"
+import shourya from "../../../../assets/shourya.jpg"
 const Contact = () => {
     return ( 
         <div className={styles.main}>
@@ -11,14 +12,18 @@ const Contact = () => {
             <div>
                 <div>
                     <div style={{gap:"10px"}}>
-                    <h3>Siddhant</h3>
+                    <h3>Shourya</h3>
                     <div style={{alignItems:"center",gap:"10px"}}>
                     <img style={{height:"100%"}} src={discord} alt="" />
-                    <h5>wakeeuppsidd</h5>
+                    <h5>shouryade</h5>
                     </div>
 
                     </div>
-                    <img src={photo} alt="" />
+                    <img style={{
+                        borderRadius:"50%",
+                        height:"110px",
+                        width:"110px"
+                    }} src={shourya} alt="" />
                 </div>
 
                 <p>
