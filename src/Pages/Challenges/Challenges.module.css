@@ -1,5 +1,5 @@
 .main{
-    height: 85dvh;
+    height: 100vh;
     background: #000;
     display: flex;
     flex-direction: column;
@@ -8,4 +8,59 @@
     color: white;
     font-size: clamp(1rem,4vw,3rem);
     font-family: var(--satoshi-medium-font);
+    overflow: scroll;
+    position: relative;
+}
+
+.main::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.container{
+    height: 300vh;
+    width: 200vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.section{
+    margin: 25vh auto;
+    display: flex;
+	align-items: flex-start;
+	gap: 100px;	
+}
+
+div.section:nth-child(1){
+    margin-top: 325vh;
+}
+
+.section0{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

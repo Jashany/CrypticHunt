@@ -1,0 +1,12 @@
+.challengebox{
+    display: flex;
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 15px;
+    border: 2.5px solid #FFF;
+    color: #FFF;
+    
+}
