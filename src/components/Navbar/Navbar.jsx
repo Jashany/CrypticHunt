@@ -8,6 +8,7 @@ import { logout } from '../../Slices/authslice';
 import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { clearSolvedQuestions } from '../../Slices/questionSlice';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
@@ -18,6 +19,7 @@ const Navbar = () => {
     const submitHandler = () => {
         dispatch(logout());
         dispatch(clearTeamInfo());
+        dispatch(clearSolvedQuestions())
     }
     return ( 
     <div className={`${isOpen ? styles.responsive: ''}`}>

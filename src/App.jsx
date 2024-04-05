@@ -10,11 +10,12 @@ import { ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css'
 import TeamCreate from "./Pages/Teamcreatejoin/TeamCreate"
 import TeamPage from "./Pages/TeamPage/TeamPage"
-import Challenge from "./Pages/Challenges/Challenges"
 import Leaderboard from "./Pages/Leaderboard/Leaderboard"
 import ForgetPass from "./Pages/Signin/ForgetPass/Forget"
 import ResetPass from "./Pages/Signin/ForgetPass/Reset"
 import PrivateRouteuser from "./components/PrivateRouteuser"
+import Challenge from "./Pages/Challenges/Challengetest"
+import Question from "./Pages/Challenges/Question"
 
 function App() {
 
@@ -29,12 +30,14 @@ function App() {
         <Route path="/forget-password" element={<ForgetPass />} />
         <Route path="/reset-password/:id/:token" element={<ResetPass />} />
         <Route path='' element={<PrivateRouteuser />} >
+          
+          <Route path="/challenge" element={<Challenge />} />
+        <Route path="/ques/:id" element={<Question />} />
 
           <Route path="/create" element={<TeamCreate />} />
         </Route>
         <Route path='' element={<PrivateRoute />}>
           <Route path="/team" element={<TeamPage />} />
-          <Route path="/challenge" element={<Challenge />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
 
         </Route>

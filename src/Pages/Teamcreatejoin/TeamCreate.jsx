@@ -9,13 +9,13 @@ import { useCreateTeamMutation } from "../../Slices/teamApiSlice";
 import * as Yup from "yup";
 
 import { toast } from "react-toastify";
+import { solveQuestion } from "../../Slices/questionSlice";
 const TeamCreate = () => {
     const navigate = useNavigate();
     const {teamInfo} = useSelector((state) => state.team);
     
     useEffect(() => {
         if(teamInfo){
-            console.log(teamInfo)
             navigate('/team')
         }
     }, [teamInfo, navigate]);
@@ -54,10 +54,12 @@ const JoinTeam = () => {
             await validate.validate({ teamId });
             try {
                 try {
-                    console.log(userInfo._id)
                     const res = await join({ teamId , userId: userInfo._id}).unwrap();
                     dispatch(setTeamInfo({ ...res }));
                     navigate('/team');
+                    res.solvedQuestions.forEach(id => {
+                        dispatch(solveQuestion({id}));
+                    });
                 } 
                 catch (error) {
                     toast.error(error?.data?.message || error?.message || error);
@@ -101,7 +103,6 @@ const CreateTeam = () => {
         };
         const handleTeamName = (e) => {
             setTeamName(e.target.value);
-            console.log(teamName);
         };
 
         const validate = Yup.object({
@@ -117,8 +118,6 @@ const CreateTeam = () => {
 
                 try {
                     try {
-                        console.log(userInfo._id)
-                        console.log(teamName)
                         const res = await create({ teamName , userId: userInfo._id}).unwrap();
                         dispatch(setTeamInfo({ ...res }));
                         if (res.status === 200 || 201 ) {

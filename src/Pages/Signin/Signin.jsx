@@ -10,6 +10,7 @@ import { toast } from 'react-toastify';
 import { useFetchTeamDetailsMutation } from '../../Slices/teamApiSlice';
 import { setTeamInfo } from '../../Slices/teamSlice';
 import * as Yup from "yup";
+import { solveQuestion } from '../../Slices/questionSlice';
 
 
 
@@ -78,9 +79,12 @@ const Signin = () => {
             const res = await login({ email, password }).unwrap();
             dispatch(setCredentials({ ...res }));
             if(res._id){
-            console.log(res._id)
             const  res2 = await teamDetails({userId: res._id}).unwrap();
             dispatch(setTeamInfo({ ...res2 }));
+            const solvedQuestions = res2.solvedQuestions;
+            res2.solvedQuestions.forEach(id => {
+              dispatch(solveQuestion({id}));
+          });
             navigate('/team');
           }else
           navigate('/create');

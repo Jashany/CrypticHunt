@@ -7,6 +7,7 @@ import { setTeamInfo } from '../../Slices/teamSlice.js';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useFetchTeamDetailsMutation } from '../../Slices/teamApiSlice.js';
+import { solveQuestion } from '../../Slices/questionSlice.js';
 
 
 const TeamPage = () => {
@@ -30,6 +31,9 @@ const TeamPage = () => {
         try {
             const res = await getTeam({userId: userInfo._id}).unwrap();
             dispatch(setTeamInfo({ ...res }));
+            res.solvedQuestions.forEach(id => {
+                dispatch(solveQuestion({id}));
+            });
         } catch (error) {
             console.error("Failed to fetch team details: ", error);
         }
