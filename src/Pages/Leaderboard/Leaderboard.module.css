@@ -1,11 +1,68 @@
 .main{
     height: 85vh;
     background: #000;
-    display: flex;
+    display: flex;  
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: white;
-    font-size: clamp(1rem,4vw,3rem);
+    font-size: clamp(1rem,4vw,2.5rem);
     font-family: var(--satoshi-medium-font);
+}
+
+.main h2{
+    font-size: clamp(1rem,4vw,3rem);
+    font-family: var(--joystick-font);
+    margin-bottom: 2rem;
+}
+
+.main table{
+    width: 60%;
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+.main thead{
+}   
+
+.main th{
+    border: 1px solid white;
+}
+
+
+.main td{
+    font-family: var(--satoshi-regular-font);
+    border: 1px solid white;
+    font-size: clamp(1rem,2vw,2rem);
+    width: 50%;
+}
+
+
+/* 
+.pagination{
+    display: flex;
+} */
+
+.teamscore{
+    position: absolute;
+    right: 60px;
+    font-size: clamp(1rem,2vw,1.5rem);
+    margin-top: 10px;
+}
+
+.heading{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
+    .teamscore{
+        position: static;
+        margin-top: 0px;
+    }
+    .heading{
+        flex-direction: column-reverse;
+    }
 }

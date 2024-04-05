@@ -1,0 +1,63 @@
+.box{
+    height: 80px;
+    width: 80px;
+    
+    border-radius: 10px;
+    background-color: transparent;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    overflow: hidden;
+    position: relative;
+}
+
+.box h1{
+    font-size: 2rem;
+    font-weight: 700;
+    transition: transform 0.5s;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.box img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    object-fit: contain;
+    transition: transform 0.5s;
+}
+
+.rickroll{
+    height: 80px;
+    width: 80px;
+    
+    border-radius: 10px;
+    background-color: transparent;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid white;
+}
+
+.rickroll img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+    transition: transform 0.5s;
+}
+
+@media screen and (max-width: 700px){
+    .box,.rickroll{
+        height: 45px;
+        width: 45px;
+    }
+    
+}

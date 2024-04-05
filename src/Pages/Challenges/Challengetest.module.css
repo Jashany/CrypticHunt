@@ -1,0 +1,40 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.div{
+height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div2{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.coming{
+    color: white;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: clamp(1rem,3vw,2rem);
+    font-family: var(--satoshi-medium-font);
+
+}
+
+@media screen and (max-width: 700px){
+    .div2{
+        display: grid;
+    }
+    .coming{
+        width: 90%;
+    }
+}

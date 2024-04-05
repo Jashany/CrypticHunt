@@ -65,7 +65,6 @@ const Signup = () => {
 
     const handleChange = (e) => {
         setFormValues({ ...formValues, [e.target.name]: e.target.value });
-        console.log(formValues);
     };
 
 
