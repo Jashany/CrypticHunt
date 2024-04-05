@@ -1,9 +1,12 @@
 import QuestionBox from "./Components/Questionbox";
 import styles from "./Challengetest.module.css";
 import Navbar from "../../components/Navbar/Navbar";
-import { useSelector } from "react-redux";
+import { useSelector ,useDispatch } from "react-redux";
 import RickRollbox from "./Components/BoxRickRoll";
 import { useEffect, useState } from "react";
+import { useFetchTeamDetailsMutation } from "../../Slices/teamApiSlice";
+
+import { solveQuestion } from "../../Slices/questionSlice";
 
 const Challenge = () => {
     const [isTimeReached, setIsTimeReached] = useState(false);
@@ -42,6 +45,29 @@ const ChallengeTest = () => {
         return solvedQuestions.some(question => question.id === id);
     };
 
+    const dispatch = useDispatch();
+    const [getTeam , {isloading}] = useFetchTeamDetailsMutation();
+
+    const { userInfo } = useSelector((state) => state.auth);
+    // const { teamInfo } = useSelector((state) => state.team)
+    const userId = userInfo._id
+    console.log(userId)
+    
+    useEffect(()=>{
+       getteam();
+    },[]);
+
+
+    const getteam = async () => {
+        try {
+            const res = await getTeam({userId: userInfo._id}).unwrap();
+            res.solvedQuestions.forEach(id => {
+                dispatch(solveQuestion({id}));
+            });
+        } catch (error) {
+            console.error("Failed to fetch team details: ", error);
+        }
+    }
     const isQuestionUnlocked = (key) =>{
         if (key === 2 || key === 3 || key === 4 || key === 5 ) {
             return isQuestionSolved('660fd8c120a133a80d4d294f')
