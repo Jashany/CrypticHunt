@@ -30,15 +30,15 @@ const Timer = () => {
         <h1>THE CRYPTIC HUNT STARTS IN</h1>
         <div>
           <div>
-            <h1>{String(time.days).padStart(2, '0')}</h1>
+            <h1>00</h1>
             <p>DAYS</p>
           </div>
           <div>
-            <h1>{String(time.hours).padStart(2, '0')}</h1>
+            <h1>00</h1>
             <p>HOURS</p>
           </div>
           <div>
-            <h1>{String(time.minutes).padStart(2, '0')}</h1>
+            <h1>00</h1>
             <p>MINS</p>
           </div>
         </div>
@@ -65,7 +65,7 @@ const Timer = () => {
                     What’s eclipse??
                     </h4>
                     <p>
-                    Eclipse is ACM Thapar's flagship event consisting of (event names) providing a enjoyable ride for all tech geeks.
+                    Eclipse is ACM Thapar's flagship event consisting of Hacklipse ,Cryptic Hunt ,Enigma and Flamingo providing a enjoyable ride for all tech geeks.
                     </p>
                 </div>
             </div>
