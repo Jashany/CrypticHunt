@@ -20,7 +20,7 @@ const Question = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/challenge/getques/${id}`)
+        fetch(`https://cryptic-api.acmtiet.com/api/challenge/getques/${id}`)
         .then(res => res.json())
         .then(data => {
             setdata(data);

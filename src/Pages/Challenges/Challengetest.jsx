@@ -9,7 +9,7 @@ const Challenge = () => {
     const [isTimeReached, setIsTimeReached] = useState(false);
 
     useEffect(() => {
-        const specificTime = new Date('2024-04-05T19:00:00'); // Change this to your specific time
+        const specificTime = new Date('2024-04-05T18:00:00'); // Change this to your specific time
         const currentTime = new Date();
         
         if (currentTime >= specificTime) {
@@ -119,7 +119,7 @@ const ChallengeTest = () => {
                 <QuestionBox key={18} unlocked={isQuestionUnlocked(18)} id={'660fe2625adc6cfeea7fec11'} solved={isQuestionSolved('660fe2625adc6cfeea7fec11')} />
                 <QuestionBox key={19} unlocked={isQuestionUnlocked(19)} id={'660fe2a15adc6cfeea7fec15'} solved={isQuestionSolved('660fe2a15adc6cfeea7fec15')} />
                 <RickRollbox />
-                <QuestionBox key={20} unlocked={isQuestionUnlocked(20)} id={'660fe2b95adc6cfeea7fec19'} solved={isQuestionSolved('660fe2b95adc6cfeea7fec19')} />
+                <QuestionBox key={20} unlocked={isQuestionUnlocked(20)} id={'660ffcc3be4d14f26cc5aeb6'} solved={isQuestionSolved('660ffcc3be4d14f26cc5aeb6')} />
                 <QuestionBox key={21} unlocked={isQuestionUnlocked(21)} id={'660fe2ba5adc6cfeea7fec1b'} solved={isQuestionSolved('660fe2ba5adc6cfeea7fec1b')} />
                 <RickRollbox />
                 </div>
