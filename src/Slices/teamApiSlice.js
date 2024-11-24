@@ -1,5 +1,5 @@
 import { apiSlice } from "./apiSlice";
-const TEAMS_UR = import.meta.env.VITE_API;
+const TEAMS_UR = "https://cryptic-api.acmtiet.com"
 
 export const teamApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({

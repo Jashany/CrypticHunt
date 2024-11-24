@@ -6,7 +6,7 @@ const Leaderboard = () => {
   const { teamInfo } = useSelector((state) => state.team);
   const [leaderboardData, setLeaderboardData] = useState([]);
   useEffect(() => {
-    fetch('https://cryptic-api.acmtiet.com/api/users/leaderboard')
+    fetch('https://cryptic-api.acmtiet.com/leaderboard')
       .then((res) => res.json())
       .then((data) => {
         setLeaderboardData(data.reverse());
@@ -34,7 +34,7 @@ const Leaderboard = () => {
         <tbody>
           {leaderboardData?.slice(0,9).map((team, index) => (
             <tr key={index}>
-          <td>{team?.value}</td>
+          <td>{team?.team}</td>
           <td>{Math.floor(team?.score)}</td>
             </tr>
           ))}
