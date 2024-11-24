@@ -70,7 +70,7 @@ const ChallengeTest = () => {
     }
     const isQuestionUnlocked = (key) =>{
         if (key === 2 || key === 3 || key === 4 || key === 5 ) {
-            return isQuestionSolved('6742f0c66502c32882d43d6a')
+            return isQuestionSolved('6742f7a1060019a08379eae3')
         }
         if (key === 6 || key === 7 || key === 8 || key === 9 ) {
             return isQuestionSolved('660fd9745adc6cfeea7febe9')
@@ -120,7 +120,7 @@ const ChallengeTest = () => {
                 <RickRollbox />
                 <RickRollbox />
                 <QuestionBox key={2} unlocked={isQuestionUnlocked(2)} id={'6742e2da6502c32882d43d5e'} solved={isQuestionSolved('6742e2da6502c32882d43d5e')} />
-                <QuestionBox key={1} unlocked={true} id={'6742f0c66502c32882d43d6a'} solved={isQuestionSolved('6742f0c66502c32882d43d6a')}  />
+                <QuestionBox key={1} unlocked={true} id={'6742f7a1060019a08379eae3'} solved={isQuestionSolved('6742f7a1060019a08379eae3')}  />
                 <QuestionBox key={3} unlocked={isQuestionUnlocked(3)} id={'6742f0e76502c32882d43d6c'} solved={isQuestionSolved('6742f0e76502c32882d43d6c')} />
                 <RickRollbox />
                 <RickRollbox />
@@ -128,7 +128,7 @@ const ChallengeTest = () => {
                 <QuestionBox key={12} unlocked={isQuestionUnlocked(12)} id={'660fda325adc6cfeea7febf1'} solved={isQuestionSolved('660fda325adc6cfeea7febf1')}/>
                 <RickRollbox />
                 <RickRollbox />
-                <QuestionBox key={5} unlocked={isQuestionUnlocked(5)} id={'660fd9aa5adc6cfeea7febeb'} solved={isQuestionSolved('660fd9aa5adc6cfeea7febeb')} />
+                <QuestionBox key={5} unlocked={isQuestionUnlocked(5)} id={'6742f0c66502c32882d43d6a'} solved={isQuestionSolved('6742f0c66502c32882d43d6a')} />
                 <RickRollbox />
                 <RickRollbox />     
                 <QuestionBox key={16} unlocked={isQuestionUnlocked(16)} id={'660fdb025adc6cfeea7febf9'} solved={isQuestionSolved('660fdb025adc6cfeea7febf9')}/>
