@@ -73,7 +73,7 @@ const ChallengeTest = () => {
             return isQuestionSolved('6742f7a1060019a08379eae3')
         }
         if (key === 6) {
-            return isQuestionSolved('660fd9745adc6cfeea7febe9')
+            return isQuestionSolved('6742f11c6502c32882d43d6e')
         }
         if (key === 10 || key === 11 || key === 12 || key === 13 ) {
             return isQuestionSolved('660fd8df20a133a80d4d2951')
@@ -94,7 +94,7 @@ const ChallengeTest = () => {
                 <div className={styles.div2}>
                 {/*  */}
                 <RickRollbox />
-                <QuestionBox key={6} unlocked={isQuestionUnlocked(6)} id={'67431ce04e1cf77ec5bb1dfe'} solved={isQuestionSolved('67431ce04e1cf77ec5bb1dfe')} />
+                <QuestionBox key={6} unlocked={isQuestionUnlocked(6)} id={'67431ce04e1cf77ec5bb1dfe'} solved={isQuestionSolved('67431ce04e1cf77ec5bb1dfec')} />
                 <QuestionBox key={7} unlocked={isQuestionUnlocked(7)} id={'660fdb9f5adc6cfeea7fec01'} solved={isQuestionSolved('660fdb9f5adc6cfeea7fec01')} />
                 <RickRollbox />
                 <QuestionBox key={8} unlocked={isQuestionUnlocked(8)} id={'660fdbd45adc6cfeea7fec03'} solved={isQuestionSolved('660fdbd45adc6cfeea7fec03')} />
@@ -112,7 +112,7 @@ const ChallengeTest = () => {
                 <QuestionBox key={11} unlocked={isQuestionUnlocked(11)} id={'660fda135adc6cfeea7febef'} solved={isQuestionSolved('660fda135adc6cfeea7febef')}/>
                 <RickRollbox />
                 <RickRollbox />
-                <QuestionBox key={4} unlocked={isQuestionUnlocked(4)} id={'67431ce04e1cf77ec5bb1dfe'} solved={isQuestionSolved('67431ce04e1cf77ec5bb1dfe')} />
+                <QuestionBox key={4} unlocked={isQuestionUnlocked(4)} id={'6742f11c6502c32882d43d6e'} solved={isQuestionSolved('6742f11c6502c32882d43d6e')} />
                 <RickRollbox />
                 <RickRollbox />
                 <QuestionBox key={15} unlocked={isQuestionUnlocked(15)} id={'660fdae85adc6cfeea7febf7'} solved={isQuestionSolved('660fdae85adc6cfeea7febf7')} /> 
