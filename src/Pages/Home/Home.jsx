@@ -14,8 +14,8 @@ const Home = () => {
             <Hero />
             <Timer />
             {!isMobile && <Timeline />}
-            <Sponser />
-            <Contact />     
+            {/* <Sponser /> */}
+            {/* <Contact />      */}
         </div>
     );
 }
