@@ -19,9 +19,7 @@ const Question = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(
-      `https://cryptichunt-backend.onrender.com/api/challenge/getques/${id}`
-    )
+    fetch(`https://cryptic-api.acmtiet.com/api/challenge/getques/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setdata(data);
