@@ -12,7 +12,7 @@ const Challenge = () => {
     const [isTimeReached, setIsTimeReached] = useState(false);
 
     useEffect(() => {
-        const specificTime = new Date('2024-04-05T18:00:00'); // Change this to your specific time
+        const specificTime = new Date('2025-04-25T21:00:00'); // Change this to your specific time
         const currentTime = new Date();
         
         if (currentTime >= specificTime) {
@@ -31,7 +31,7 @@ const Coming = () => {
         <>
         <Navbar />
         <div className={styles.coming} style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",color:"white",height:'85vh'}}>
-            <h1>Challenge will start on 5th April 2024 at 7:00 PM</h1>
+            <h1>Challenge will start on 25th April 2025 at 9:00 PM</h1>
         </div>
         </>
     )
