@@ -6,7 +6,7 @@ const Leaderboard = () => {
   const { teamInfo } = useSelector((state) => state.team);
   const [leaderboardData, setLeaderboardData] = useState([]);
   useEffect(() => {
-    fetch("https://cryptic-api.acmtiet.com/leaderboard")
+    fetch("https://cryptic-api.jsondev.in/leaderboard")
       .then((res) => res.json())
       .then((data) => {
         setLeaderboardData(data);

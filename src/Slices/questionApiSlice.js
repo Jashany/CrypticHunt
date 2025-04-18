@@ -1,6 +1,6 @@
 import { apiSlice } from "./apiSlice";
 
-const quesURI = "https://cryptic-api.acmtiet.com";
+const quesURI = "https://cryptic-api.jsondev.in";
 
 export const questionApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
@@ -12,7 +12,8 @@ export const questionApiSlice = apiSlice.injectEndpoints({
       }),
     }),
     getQuestion: builder.query({
-      query: (id) => `https://cryptic-api.acmtiet.com/api/challenge/getques/${id}`,
+      query: (id) =>
+        `https://cryptic-api.jsondev.in/api/challenge/getques/${id}`,
     }),
   }),
 });
