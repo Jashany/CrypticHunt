@@ -18,22 +18,22 @@ import internshala from "../src/assets/internshala.jpg";
 
 export const timeline = [
     {
-        t1:"6PM",
+        t1:"9PM",
         t2:"THE CRYPTIC HUNT",
         t3:"STARTS"
     },
     {
-        t1:"9PM",
+        t1:"12PM",
         t2:"DOUBT SESSION",
         t3:"STARTS"
     },
     {
-        t1:"3AM",
+        t1:"4AM",
         t2:"DOUBT SESSION",
         t3:"ENDS"
     },
     {
-        t1:"6PM",
+        t1:"9AM",
         t2:"THE CRYPTIC HUNT",
         t3:"END"
     }
