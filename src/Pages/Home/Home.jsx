@@ -13,7 +13,7 @@ const Home = () => {
             <ParticlesComponent />
             <Hero />
             <Timer />
-            {!isMobile && <Timeline />}
+            {/* {!isMobile && <Timeline />} */}
             {/* <Sponser /> */}
             {/* <Contact />      */}
         </div>
