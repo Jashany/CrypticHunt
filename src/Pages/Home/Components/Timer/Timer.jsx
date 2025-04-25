@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "./Timer.module.css";
 
 const calculateTimeRemaining = () => {
-  const targetDate = new Date("April 25, 2025 21:00:00 GMT+00:00");
+  const targetDate = new Date("April 25, 2025 22:00:00 GMT+00:00");
   const now = new Date();
 
   const timeRemaining = targetDate - now;
