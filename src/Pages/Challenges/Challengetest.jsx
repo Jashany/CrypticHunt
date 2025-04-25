@@ -75,9 +75,9 @@ const ChallengeTest = () => {
         if (key === 6 || key === 7 || key === 8 || key === 9 ) {
             return isQuestionSolved('680bb84c12a2894cdd479f97')
         }
-        // if ( key === 13 ) {
-        //     return isQuestionSolved('6742e2da6502c32882d43d5e')
-        // }
+        if (  key === 12 || key === 11 || key === 10 ) {
+            return isQuestionSolved('680bb42a12a2894cdd479f7f')
+        }
         if (key === 14 || key === 15 || key === 16 || key === 17 ) { 
             return isQuestionSolved('680bb6a312a2894cdd479f8d')
         }
@@ -101,7 +101,7 @@ const ChallengeTest = () => {
                 <QuestionBox key={9} unlocked={isQuestionUnlocked(9)} id={'680bbc9b12a2894cdd479ffb'} solved={isQuestionSolved('680bbc9b12a2894cdd479ffb')} />
                 <RickRollbox />
                 {/*  */}
-                <QuestionBox  key={10} unlocked={isQuestionUnlocked(10)} id={'660fd9da5adc6cfeea7febed'} solved={isQuestionSolved('660fd9da5adc6cfeea7febed')} />
+                <QuestionBox  key={10} unlocked={isQuestionUnlocked(10)} id={'680bc41e12a2894cdd47a81f'} solved={isQuestionSolved('680bc41e12a2894cdd47a81f')} />
                 <RickRollbox  />
                 <RickRollbox />
                 <RickRollbox  />
@@ -109,7 +109,7 @@ const ChallengeTest = () => {
                 <RickRollbox />
                 <QuestionBox key={14} unlocked={isQuestionUnlocked(14)} id={'680bbcda12a2894cdd47a001'} solved={isQuestionSolved('680bbcda12a2894cdd47a001')}/>
                 {/*  */}
-                <QuestionBox key={11} unlocked={isQuestionUnlocked(11)} id={'660fda135adc6cfeea7febef'} solved={isQuestionSolved('660fda135adc6cfeea7febef')}/>
+                <QuestionBox key={11} unlocked={isQuestionUnlocked(11)} id={'680bc52012a2894cdd47aa20'} solved={isQuestionSolved('680bc52012a2894cdd47aa20')}/>
                 <RickRollbox />
                 <RickRollbox />
                 <QuestionBox key={4} unlocked={isQuestionUnlocked(4)} id={'680bb84c12a2894cdd479f97'} solved={isQuestionSolved('680bb84c12a2894cdd479f97')} />
@@ -125,7 +125,7 @@ const ChallengeTest = () => {
                 <RickRollbox />
                 <RickRollbox />
                 {/*  */}
-                <QuestionBox key={12} unlocked={isQuestionUnlocked(12)} id={'660fda325adc6cfeea7febf1'} solved={isQuestionSolved('660fda325adc6cfeea7febf1')}/>
+                <QuestionBox key={12} unlocked={isQuestionUnlocked(12)} id={'680bcf8212a2894cdd47b891'} solved={isQuestionSolved('680bcf8212a2894cdd47b891')}/>
                 <RickRollbox />
                 <RickRollbox />
                 <QuestionBox key={5} unlocked={isQuestionUnlocked(5)} id={'680bb78312a2894cdd479f91'} solved={isQuestionSolved('680bb78312a2894cdd479f91')} />
