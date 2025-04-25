@@ -75,7 +75,7 @@ const ChallengeTest = () => {
         if (key === 6 || key === 7 || key === 8 || key === 9 ) {
             return isQuestionSolved('680bb84c12a2894cdd479f97')
         }
-        if (  key === 12 || key === 11 || key === 10 ) {
+        if (  key === 12 || key === 11 || key === 10 || key === 13 ) {
             return isQuestionSolved('680bb42a12a2894cdd479f7f')
         }
         if (key === 14 || key === 15 || key === 16 || key === 17 ) { 
@@ -133,7 +133,7 @@ const ChallengeTest = () => {
                 <RickRollbox />     
                 <QuestionBox key={16} unlocked={isQuestionUnlocked(16)} id={'680bbd4e12a2894cdd47a00a'} solved={isQuestionSolved('680bbd4e12a2894cdd47a00a')}/>
                 {/*  */}
-                <QuestionBox key={13} unlocked={isQuestionUnlocked(13)} id={'674320004e1cf77ec5bb20fc'} solved={isQuestionSolved('674320004e1cf77ec5bb20fc')}/>
+                <QuestionBox key={13} unlocked={isQuestionUnlocked(13)} id={'680be38312a2894cdd47cb26'} solved={isQuestionSolved('680be38312a2894cdd47cb26')}/>
                 <RickRollbox />
                 <RickRollbox />
                 <RickRollbox />
