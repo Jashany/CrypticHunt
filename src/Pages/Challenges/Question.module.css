@@ -13,7 +13,7 @@
     color: white;
     border: 1px solid white;
    
-
+    
 }
 
 .main h1{
@@ -46,7 +46,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: fit-content;
     text-align: left;
     border: 1px solid white;
     position: relative;
