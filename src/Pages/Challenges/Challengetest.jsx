@@ -75,9 +75,9 @@ const ChallengeTest = () => {
         if (key === 6 || key === 7 || key === 8 || key === 9 ) {
             return isQuestionSolved('680bb84c12a2894cdd479f97')
         }
-        if ( key === 13 ) {
-            return isQuestionSolved('6742e2da6502c32882d43d5e')
-        }
+        // if ( key === 13 ) {
+        //     return isQuestionSolved('6742e2da6502c32882d43d5e')
+        // }
         if (key === 14 || key === 15 || key === 16 || key === 17 ) { 
             return isQuestionSolved('680bb6a312a2894cdd479f8d')
         }
