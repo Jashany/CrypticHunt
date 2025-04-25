@@ -12,7 +12,7 @@ const Challenge = () => {
     const [isTimeReached, setIsTimeReached] = useState(false);
 
     useEffect(() => {
-        const specificTime = new Date('2024-04-05T18:00:00'); // Change this to your specific time
+        const specificTime = new Date('2025-04-25T22:00:00'); // Change this to your specific time
         const currentTime = new Date();
         
         if (currentTime >= specificTime) {
