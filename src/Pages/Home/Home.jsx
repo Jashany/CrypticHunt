@@ -12,7 +12,7 @@ const Home = () => {
         <div className={Style.main}>
             <ParticlesComponent />
             <Hero />
-            <Timer />
+{/*             <Timer /> */}
             {!isMobile && <Timeline />}
             {/* <Sponser /> */}
             {/* <Contact />      */}
