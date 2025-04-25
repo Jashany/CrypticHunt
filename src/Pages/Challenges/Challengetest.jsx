@@ -31,7 +31,7 @@ const Coming = () => {
         <>
         <Navbar />
         <div className={styles.coming} style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",color:"white",height:'85vh'}}>
-            <h1>Challenge will start on 25th April 2025 at 9:00 PM</h1>
+            <h1>Challenge will start on 25th April 2025 at 10:00 PM</h1>
         </div>
         </>
     )
